@@ -5,7 +5,7 @@ Today I Learned - bits of knowledge!
 
 ### Machine Learning and Statistics
 
-* [concordance-index](#machine-learning-stats/concordance.md)
+* [concordance-index](machine-learning-stats/concordance.md)
 
 ### Python
 
