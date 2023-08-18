@@ -10,7 +10,7 @@ Today I Learned - bits of knowledge!
 ### Python
 
 * [decorators](python/decorators.md)
-* [minio-upload](python.minio-uploads.md)
+* [minio-upload](python/minio-uploads.md)
 
 ### Tools
 
