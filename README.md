@@ -3,8 +3,16 @@ Today I Learned
 
 [Utils](#utils)
 
-### Python
-[decorators](python/decorators.md)
 
-### Utils
-[licecap](utils/licecap.md)
+### Machine Learning and Statistics
+
+* [concordance-index](#machine-learning-and-statistics/concordance.md)
+
+### Python
+
+* [decorators](python/decorators.md)
+* [minio-upload](python.minio-uploads.md)
+
+### Tools
+
+* [licecap](tools/licecap.md)
