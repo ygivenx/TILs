@@ -11,6 +11,7 @@
 
 * [decorators](python/decorators.md)
 * [minio-upload](python/minio-uploads.md)
+* [spacy-matcher](python/spacy-matcher.ipynb)
 
 ### 🪛 Tools
 
