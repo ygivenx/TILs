@@ -1,11 +1,13 @@
 # Command Line Interface using python-fire
 
-Fire provides a truly simple way to get started with commandline
-applications. It is python friendly and can expose any (read the docs)
-python object as a command line interface
+Fire provides a truly simple way to get started with command line
+applications. It is python friendly and can expose any python object
+as a command line interface
 
 To get started
 `pip install fire`
+
+Docs: [read the docs](https://github.com/google/python-fire/blob/master/docs/guide.md)
 
 ### Simple Use Case 1
 
@@ -57,11 +59,24 @@ Expore your class as CLI
   20   │     self.countries = database
   21   │
   22   │   def info(self, country, attribute):
-  23   │     return self.countries[country.title()].get("attribute")
-  24   │
+  23   │     res = self.countries[country.title()].get(attribute)
+  24   │     return res
   25   │
-  26   │ if __name__ == "__main__":
-  27   │   fire.Fire(Census)
+  26   │
+  27   │ if __name__ == "__main__":
+  28   │   """
+  29   │   use this as key based interface to the dict
+  30   │   outputs
+  31   │   $python component-example.py India
+  32   │   GDP: 5 Trillion
+  33   │   pop: 1500000000
+  34   │   """
+  35   │   # fire.Fire(database)
+  36   │
+  37   │   """
+  38   │   Expose the class as an Interface
+  39   │   """
+  40   │   fire.Fire(Census)
 ```
 
 ### Output
