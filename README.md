@@ -6,6 +6,7 @@
 ### 🤖 Machine Learning and Statistics
 
 * [concordance-index](machine-learning-stats/concordance.md)
+* [attention-is-all-you-need](machine-learning-stats/attention.md)
 
 ### 🐍 Python
 
