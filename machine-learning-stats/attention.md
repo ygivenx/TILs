@@ -1,4 +1,7 @@
-url:: [Arxiv](https://arxiv.org/pdf/1706.03762.pdf), [video-Transformer](https://www.youtube.com/watch?v=iDulhoQ2pro&ab_channel=YannicKilcher), [Video-Language Models](https://youtu.be/-QH8fRhqFHM)
+# Attention Is All You Need
+
+
+url:: [Arxiv](https://arxiv.org/pdf/1706.03762.pdf)
 
 ### Summary
 
@@ -8,25 +11,27 @@ On the decoder side, the nice idea is getting the Key and Value matrices from la
 
 Masked Multi-head attention on the decoder end to avoid self attention on future tokens.
 
-After decoder layer output, the principles of Language models apply such as `greedy decoding` or `beam search`
+After decoder layer output, we can apply `greedy decoding` or `beam search`
 
 ### Notes
 
 #### Explanation by Jay Alamar
 
 ![Alt text](image-3.png)
+
 The encoder-decoder attention works similar to attention in Neural Machine Translation
 
-###### Steps
+### Steps
 
-- All the words are converted to embeddings using an embedding algorithm (512 in case of BERT)
+- All the words are converted to embeddings using an embedding algorithm (embedding length=512 in case of BERT)
 
 ![Alt text](image-2.png)
+
 - The same vector size e.g. 4 in this case * `max-seq-length` (*hyperparam*) is carried through encoder layers
 - Each word has its own path through the encoder
 - In self-attention layer, these paths depend on other (can't be parallel)
 - Feed-forward part has no dependencies so it can be executed in parallel
-- The same feed-forward part if applied to the output of self attention layers
+- The same feed-forward part if applied to the output of self attention layers but the weights are different.
 
 ##### Self Attention
 
@@ -35,11 +40,12 @@ Intuition - Bake the understanding of other relevant words into the word current
 ![Alt text](image-1.png)
 
 Steps 2-6 can be condensed into $$softmax{(\frac{Q K^T}{\sqrt{(d_k)}})}V = Z$$
+
 ##### Multi-head Attention
 
-Intuition - in the above figure, Z contains a little of all encodings but could be dominated by itself.
+Intuition - in the above equation, Z contains a little of all encodings but could be dominated by itself.
 
-In the [[Attention is All You Need]] paper, they have 8 heads ,so we end up doing the same calculation as above 8 times with different weight matrices
+In the `Attention is All You Need` paper, they have 8 attention heads, so we end up doing the same calculation as above 8 times with different weight matrices
 
 Feedforward is expecting a single and not 8 matrix for each keyword. To achieve this,
 
@@ -53,6 +59,8 @@ To account for the order in the sequence of text, we assign a Positional Embeddi
 These vectors follow a specific pattern.
 
 ##### The Residuals
+
+These are the residual connections in the paper.
 
 ![Alt text](image.png)
 
