@@ -18,3 +18,4 @@
 ### 🪛 Tools
 
 * [licecap](tools/licecap.md)
+* [brew-old-version](tools/brew-old-packages.md)
