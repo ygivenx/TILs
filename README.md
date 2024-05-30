@@ -14,6 +14,7 @@
 * [minio-upload](python/minio-uploads.md)
 * [spacy-matcher](python/spacy-matcher.ipynb)
 * [python-fire](python/fire.md)
+* [python-rq](python/rq.md)
 
 ### 🪛 Tools
 
