@@ -1,6 +1,6 @@
 # Python RQ
 
-A simple getting started for python RQ. RQ is a simple library that use can use to create a queue to process long running tasks.
+A simple getting started for python RQ. RQ is a simple library that use can be used to create a queue to process long running tasks.
 
 ### Steps
 
