@@ -18,7 +18,7 @@ from rq import Queue
 from rq.job import Job
 import time
 import random
-from dummy_task import simple_task
+from task import simple_task
 
 # Connect to Redis
 redis_conn = Redis.from_url("redis://localhost:6379/0")
