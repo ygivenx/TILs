@@ -7,6 +7,9 @@ A simple getting started for python RQ. RQ is a simple library that use can be u
 - Run a redis docker
 `docker run -d --name redis-test -p 6379:6379 redis:latest`
 
+-  Start a rq worker
+`rq worker -u redis://localhost:6379/0`
+ 
 - Create a python file with a task and process the results.
 ```python
 # task.py
