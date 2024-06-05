@@ -7,6 +7,7 @@
 
 * [concordance-index](machine-learning-stats/concordance.md)
 * [attention-is-all-you-need](machine-learning-stats/attention.md)
+* [Retrieval-Augumented-Generation](machine-learning-stats/Retrieval%20Augmented%20Generation.md)
 
 ### 🐍 Python
 
